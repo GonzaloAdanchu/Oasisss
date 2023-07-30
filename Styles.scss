@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+/* familia tipográfica: 'Bebas Neue', cursiva; */
+/* familia de fuentes: 'Bungee', cursiva; */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(/Proyecto_web/images/Fondo4.jpg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* sector de menus menues, logos y cabecera */
+.header {
+  background-image: url(/Proyecto_web/images/Fondo-1.jpg);
+  background-size: cover;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+
+  &-QuienSoy,
+  &-Servicios,
+  &-Cursos,
+  &-Contactos {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.OASIS {
+  font-size: 85px;
+  color: rgb(36, 58, 65);
+  font-weight: 800;
+  transform: translateX(-55%) translateY(15%);
+}
+
+.navPel {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  li:hover {
+    background-color: rgb(247, 216, 77);
+  }
+
+  li a {
+    display: block;
+    padding: 20px;
+    color: rgb(247, 216, 77);
+    font-size: 16px;
+  }
+
+  li a:hover {
+    color: rgb(247, 216, 77);
+  }
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(247, 216, 77);
+}
+
+  label {
+    display: none;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    border-right: 1px solid rgb(247, 216, 77);
+    cursor: pointer;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+    li:hover {
+      background-color: rgb(36, 58, 65);
+      border-radius: 20px;
+    }
+
+    li a {
+      display: block;
+      padding: 20px;
+      color: rgb(0, 0, 0);
+      font-size: 25px;
+    }
+
+    li a:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  &-txt {
+    h1,
+    span,
+    h3 {
+      font-size: 50px
+    }
+  }
